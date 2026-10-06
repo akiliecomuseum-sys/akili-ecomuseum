@@ -1,175 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akili Ecomuseum Network | Africa's First Digital Highland-to-Ocean Ecomuseum</title>
-  <meta name="description" content="Africa's first digital, open-access ecomuseum operating on a Highland-to-Ocean (Ridge-to-Reef) node architecture across Kenya.">
-  <meta name="author" content="Abdul Mubarak Rick">
-  
-  <!-- Academic Citation Indexing -->
-  <meta name="citation_doi" content="10.5281/zenodo.XXXXXXX">
-  <meta name="dc.identifier" content="https://doi.org/10.5281/zenodo.XXXXXXX">
-
-  <!-- Schema.org Structured Data for Google Knowledge Graph -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Museum",
-    "name": "Akili Ecomuseum Network",
-    "alternateName": ["Akili Marine EcoMuseum", "AEN"],
-    "identifier": "https://doi.org/10.5281/zenodo.XXXXXXX",
-    "sameAs": [
-      "https://doi.org/10.5281/zenodo.XXXXXXX"
-    ],
-    "description": "Africa's first digital, open-access ecomuseum operating on a Highland-to-Ocean (Ridge-to-Reef) node architecture.",
-    "url": "https://akiliecomuseum-sys.github.io/akili-ecomuseum/",
-    "foundingDate": "2026-10-06",
-    "founder": {
-      "@type": "Person",
-      "name": "Abdul Mubarak Rick",
-      "jobTitle": "Director & Lead Systems Engineer"
+{
+  "network": "Akili Ecomuseum Network",
+  "master_doi": "10.5281/zenodo.23180750",
+  "license": "CC BY-NC-SA 4.0",
+  "web_portal": "https://akiliecomuseum-sys.github.io/akili-ecomuseum/",
+  "corridor_length_km": 800,
+  "nodes": [
+    {
+      "id": "node-00",
+      "name": "Mount Kenya Water Tower",
+      "type": "Highland Headwater",
+      "coordinates": [-0.1521, 37.3084],
+      "hydrology": "Tana & Athi Basins",
+      "status": "active"
     },
-    "locationCreated": {
-      "@type": "Country",
-      "name": "Kenya"
+    {
+      "id": "node-01",
+      "name": "Mara River Basin",
+      "type": "Savanna Hydrology",
+      "coordinates": [-1.5167, 35.1333],
+      "hydrology": "Transboundary Basin",
+      "status": "active"
     },
-    "knowsAbout": [
-      "Marine Conservation",
-      "Ridge-to-Reef Hydrology",
-      "Swahili Maritime Heritage",
-      "Indigenous Ecological Knowledge",
-      "Decentralized Ecomuseum Nodes"
-    ]
-  }
-  </script>
-
-  <style>
-    :root {
-      --primary: #0f766e;
-      --primary-dark: #115e59;
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text: #0f172a;
-      --text-muted: #475569;
-      --border: #e2e8f0;
+    {
+      "id": "node-02",
+      "name": "Athi-Galana-Sabaki Basin",
+      "type": "Highland-to-Reef River",
+      "coordinates": [-3.1528, 40.1389],
+      "hydrology": "Sabaki River & Estuary",
+      "status": "active"
+    },
+    {
+      "id": "node-03",
+      "name": "Tana River Basin & Delta",
+      "type": "Riverine Delta",
+      "coordinates": [-2.5333, 40.3833],
+      "hydrology": "Tana River Catchment",
+      "status": "active"
+    },
+    {
+      "id": "node-04",
+      "name": "Shimoni Caves & Kisite",
+      "type": "Subterranean & Reef",
+      "coordinates": [-4.6472, 39.3814],
+      "hydrology": "Coral Rag & Kisite Sanctuary",
+      "status": "active"
+    },
+    {
+      "id": "node-05",
+      "name": "Shimba Hills Ridge",
+      "type": "Coastal Rainforest",
+      "coordinates": [-4.2183, 39.4219],
+      "hydrology": "Mwaluganje Catchment",
+      "status": "active"
+    },
+    {
+      "id": "node-06",
+      "name": "Mombasa & Tudor Creek",
+      "type": "Estuarine Port",
+      "coordinates": [-4.0435, 39.6682],
+      "hydrology": "Tudor & Mwache Creeks",
+      "status": "active"
+    },
+    {
+      "id": "node-07",
+      "name": "Kilifi & Watamu Reefs",
+      "type": "Marine Sanctuary",
+      "coordinates": [-3.3536, 40.0125],
+      "hydrology": "Mida Creek & Indian Ocean Lagoon",
+      "status": "active"
+    },
+    {
+      "id": "node-08",
+      "name": "Lamu & Bajuni Heritage",
+      "type": "Maritime Archipelago",
+      "coordinates": [-2.2686, 40.9003],
+      "hydrology": "Lamu Archipelago Seaways",
+      "status": "active"
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
-    .container { max-width: 960px; margin: 0 auto; }
-    header { border-bottom: 3px solid var(--primary); padding-bottom: 2rem; margin-bottom: 2.5rem; }
-    .badge { background: #ccfbf1; color: #115e59; padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: inline-block; margin-bottom: 1rem; }
-    h1 { font-size: 2.5rem; color: var(--primary-dark); line-height: 1.2; margin-bottom: 0.5rem; }
-    .subtitle { font-size: 1.25rem; color: var(--text-muted); font-weight: 500; }
-    .meta-bar { margin-top: 1rem; font-size: 0.95rem; color: var(--text-muted); display: flex; gap: 1.5rem; flex-wrap: wrap; }
-    section { margin-bottom: 3rem; background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border); }
-    h2 { font-size: 1.5rem; color: var(--primary); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-    p { margin-bottom: 1rem; color: var(--text); }
-    .node-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
-    .node-card { background: var(--bg); border: 1px solid var(--border); border-left: 4px solid var(--primary); padding: 1.25rem; border-radius: 8px; }
-    .node-card h3 { font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 0.25rem; }
-    .node-type { font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #0d9488; margin-bottom: 0.5rem; display: block; }
-    .node-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0; }
-    footer { text-align: center; font-size: 0.875rem; color: var(--text-muted); margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <header>
-      <span class="badge">Official Public Launch & Archive</span>
-      <h1>Akili Ecomuseum Network</h1>
-      <p class="subtitle">Africa's First Digital Highland-to-Ocean (Ridge-to-Reef) Ecomuseum</p>
-      <div class="meta-bar">
-        <span><strong>Launch Date:</strong> October 6, 2026</span>
-        <span><strong>Founding Director:</strong> Abdul Mubarak Rick</span>
-        <span>
-          <strong>Permanent DOI:</strong> 
-          <a href="https://doi.org/10.5281/zenodo.XXXXXXX" target="_blank" rel="noopener" style="color: #0f766e; font-weight: bold; text-decoration: underline;">
-            10.5281/zenodo.23180750
-          </a>
-        </span>
-      </div>
-    </header>
-
-    <main>
-      <section>
-        <h2>Institutional Mission</h2>
-        <p>The <strong>Akili Ecomuseum Network (AEN)</strong> is a decentralized, open-access digital public good archiving ecological health, indigenous heritage, oral histories, and environmental stewardship across East Africa's continuous hydrological corridors.</p>
-        <p>By connecting mountain glaciers, riverine basins, estuarine deltas, and coastal marine sanctuaries into a unified digital ecosystem, AEN bridges freshwater science, Swahili maritime culture, and community-led conservation.</p>
-      </section>
-
-      <section>
-        <h2>Highland-to-Ocean Node Network</h2>
-        <p>The network operates through an open, non-ownership digital node model spanning an 800-kilometer hydrological corridor across Kenya:</p>
-        
-        <div class="node-grid">
-          <div class="node-card">
-            <span class="node-type">Node 00 • Highland Headwater</span>
-            <h3>Mount Kenya Water Tower</h3>
-            <p>Glacial catchments, cloud forests, and sacred mountain hydrology feeding the Tana and Athi river basins.</p>
-          </div>
-
-          <div class="node-card">
-            <span class="node-type">Node 01 • Savanna Hydrology</span>
-            <h3>Mara River Basin</h3>
-            <p>Transboundary riverine dynamics, pastoralist land management, and aquatic wildlife corridor documentation.</p>
-          </div>
-
-          <div class="node-card">
-            <span class="node-type">Node 02 • Highland-to-Reef River</span>
-            <h3>Athi-Galana-Sabaki Basin</h3>
-            <p>A 390-km river corridor tracking siltation, riverine ecology, and freshwater flow into the Sabaki Estuary.</p>
-          </div>
-
-          <div class="node-card">
-            <span class="node-type">Node 03 • Riverine Delta</span>
-            <h3>Tana River Basin & Delta</h3>
-            <p>Kenya's largest deltaic ecosystem, oxbow wetlands, Pokomo riverine farming heritage, and mangrove nurseries.</p>
-          </div>
-
-          <div class="node-card">
-            <span class="node-type">Node 04 • Subterranean & Reef</span>
-            <h3>Shimoni Caves & Kisite</h3>
-            <p>Coral rag hydrology, subterranean caves, Kisite-Mpunguti marine sanctuaries, and dolphin habitats.</p>
-          </div>
-
-          <div class="node-card">
-            <span class="node-type">Node 05 • Coastal Rainforest</span>
-            <h3>Shimba Hills Ridge</h3>
-            <p>Rainforest headwaters, endemic species corridors, and sacred Mijikenda Kaya forest stewardship.</p>
-          </div>
-
-          <div class="node-card">
-            <span class="node-type">Node 06 • Estuarine Port</span>
-            <h3>Mombasa & Tudor Creek</h3>
-            <p>Urban mangrove restoration, creek hydrology, Old Town dhow harbors, and Swahili maritime trade history.</p>
-          </div>
-
-          <div class="node-card">
-            <span class="node-type">Node 07 • Marine Sanctuary</span>
-            <h3>Kilifi & Watamu Reefs</h3>
-            <p>Coral lagoons, sea turtle nesting beaches, Mida Creek mangroves, and BMU community governance.</p>
-          </div>
-
-          <div class="node-card">
-            <span class="node-type">Node 08 • Maritime Archipelago</span>
-            <h3>Lamu & Bajuni Heritage</h3>
-            <p>UNESCO Swahili stone architecture, dhow building craftsmanship, seagrass beds, and mangrove conservation.</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Governance & Open Access</h2>
-        <p>All digital archives, educational modules, and geospatial records published by the Akili Ecomuseum Network are held in digital public trust and licensed under <strong>Creative Commons CC BY-NC-SA 4.0</strong>. Indigenous oral histories and traditional ecological knowledge remain the perpetual cultural property of their contributing communities.</p>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2026 Akili Ecomuseum Network. Formally established & published on October 6, 2026.</p>
-    </footer>
-  </div>
-
-</body>
-</html>
+  ]
+}
