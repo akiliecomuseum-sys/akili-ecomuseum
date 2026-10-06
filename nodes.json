@@ -1,0 +1,81 @@
+{
+  "network": "Akili Ecomuseum Network",
+  "master_doi": "10.5281/zenodo.23180750",
+  "license": "CC BY-NC-SA 4.0",
+  "web_portal": "https://akiliecomuseum-sys.github.io/akili-ecomuseum/",
+  "corridor_length_km": 800,
+  "nodes": [
+    {
+      "id": "node-00",
+      "name": "Mount Kenya Water Tower",
+      "type": "Highland Headwater",
+      "coordinates": [-0.1521, 37.3084],
+      "hydrology": "Tana & Athi Basins",
+      "status": "active"
+    },
+    {
+      "id": "node-01",
+      "name": "Mara River Basin",
+      "type": "Savanna Hydrology",
+      "coordinates": [-1.5167, 35.1333],
+      "hydrology": "Transboundary Basin",
+      "status": "active"
+    },
+    {
+      "id": "node-02",
+      "name": "Athi-Galana-Sabaki Basin",
+      "type": "Highland-to-Reef River",
+      "coordinates": [-3.1528, 40.1389],
+      "hydrology": "Sabaki River & Estuary",
+      "status": "active"
+    },
+    {
+      "id": "node-03",
+      "name": "Tana River Basin & Delta",
+      "type": "Riverine Delta",
+      "coordinates": [-2.5333, 40.3833],
+      "hydrology": "Tana River Catchment",
+      "status": "active"
+    },
+    {
+      "id": "node-04",
+      "name": "Shimoni Caves & Kisite",
+      "type": "Subterranean & Reef",
+      "coordinates": [-4.6472, 39.3814],
+      "hydrology": "Coral Rag & Kisite Sanctuary",
+      "status": "active"
+    },
+    {
+      "id": "node-05",
+      "name": "Shimba Hills Ridge",
+      "type": "Coastal Rainforest",
+      "coordinates": [-4.2183, 39.4219],
+      "hydrology": "Mwaluganje Catchment",
+      "status": "active"
+    },
+    {
+      "id": "node-06",
+      "name": "Mombasa & Tudor Creek",
+      "type": "Estuarine Port",
+      "coordinates": [-4.0435, 39.6682],
+      "hydrology": "Tudor & Mwache Creeks",
+      "status": "active"
+    },
+    {
+      "id": "node-07",
+      "name": "Kilifi & Watamu Reefs",
+      "type": "Marine Sanctuary",
+      "coordinates": [-3.3536, 40.0125],
+      "hydrology": "Mida Creek & Indian Ocean Lagoon",
+      "status": "active"
+    },
+    {
+      "id": "node-08",
+      "name": "Lamu & Bajuni Heritage",
+      "type": "Maritime Archipelago",
+      "coordinates": [-2.2686, 40.9003],
+      "hydrology": "Lamu Archipelago Seaways",
+      "status": "active"
+    }
+  ]
+}
